@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.ticktick.TickTickStringTool</id>
+    <name>TickTickStringTool</name>
+    <vendor email="yf@appest.com" url="http://www.ticktick.com">滴答清单</vendor>
+
+    <description><![CDATA[
+    字符串帮助工具
+    <ul>
+        <li>删除strings.xml 中的无用字符串</li>
+        <li>添加中英文字符串和翻译</li>
+    </ul>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <toolWindow id="TickTick String Window" icon="/icon.png" anchor="right"
+                    factoryClass="com.ticktick.ticktickstringtool.StringWindowFactory"/>
+    </extensions>
+    <actions>
+    </actions>
+</idea-plugin>
